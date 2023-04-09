@@ -88,10 +88,10 @@ class GenelUye {
             Scanner giris = new Scanner(System.in);
 
             //İsteğe göre bu bölüm eklenebilir. Benim mailimi kullanabilirsiniz.
-            //System.out.println("Kendi mailinizi girin:");
-            //myAccountEmail = giris.next();
-            //System.out.println("Şifre girin:");
-            //password = giris.next();
+            System.out.println("Kendi mailinizi girin:");
+            myAccountEmail = giris.next();
+            System.out.println("Şifre girin:");
+            password = giris.next();
             System.out.println("Konu girin:");
             Subject = giris.next();
             System.out.println("Metin girin:");
@@ -108,7 +108,7 @@ class GenelUye {
                         recepient=altDizeler[2];
 
                         //Burada adrese mail gonderiyoruz. Mail gönderme fonksiyonu çalışıyor.
-                        GenelUye.SendMail(recepient, "aysenuryorur2001@gmail.com","wdvbipvbhdfvkrgu",Subject,Text);
+                        GenelUye.SendMail(recepient, myAccountEmail,password,Subject,Text); //Buraya kendi mail ve şifrenizi yazınız.
                         System.out.println("Mesajiniz adrese gönderiliyor" + recepient);
                     }
                     else if (satir.contains("#GENEL UYELER")){
@@ -126,7 +126,7 @@ class GenelUye {
                         recepient=altDizeler[2];
 
                         //Mail adresine mail gönder.
-                        GenelUye.SendMail(recepient, "aysenuryorur2001@gmail.com","wdvbipvbhdfvkrgu",Subject,Text);
+                        GenelUye.SendMail(recepient, myAccountEmail,password,Subject,Text); //Buraya kendi mail ve şifrenizi yazınız.
                     }
                 }
             }
@@ -137,7 +137,7 @@ class GenelUye {
                         recepient=altDizeler[2];
 
                         //Mail adresine mail gönder.
-                        GenelUye.SendMail(recepient, "aysenuryorur2001@gmail.com","wdvbipvbhdfvkrgu",Subject,Text);
+                        GenelUye.SendMail(recepient, myAccountEmail,password,Subject,Text); //Buraya kendi mail ve şifrenizi yazınız.
 
                     }
                 }
