@@ -87,7 +87,7 @@ class GenelUye {
 
             Scanner giris = new Scanner(System.in);
 
-            //İsteğe göre bu bölüm eklenebilir. Benim mailimi kullanabilirsiniz.
+            //Mail ve parola bilgileri, konu metin gibi şeyleri kullanıcıdan alıyoruz.
             System.out.println("Kendi mailinizi girin:");
             myAccountEmail = giris.next();
             System.out.println("Şifre girin:");
