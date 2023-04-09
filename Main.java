@@ -174,7 +174,7 @@ class GenelUye {
             }
         });
         //Mesaj oluşturma fonksiyonudur. Verilen bilgilerle uygun mail oluşturulacakttır.
-        Message message = prepareMessage(session, "aysenuryorur2001@gmail.com", recepient, subject,text);
+        Message message = prepareMessage(session, myAccountEmail, recepient, subject,text);
 
         //Oluşturulan maili gönderir
         Transport.send(message);
